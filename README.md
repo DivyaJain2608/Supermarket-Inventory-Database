@@ -10,70 +10,24 @@ This repository contains the SQL schema and ER diagram for a Retail Supermarket 
 
 ---
 
-## Project Description
-This project represents the database design for a retail supermarket.  
-It covers major operations such as product management, procurement, inventory control, sales billing, customer loyalty, employee management, and store-level operations.
 
-The schema is fully normalized and enforces primary–foreign key constraints to maintain data integrity.
 
----
 
-## Entities Included (All Tables)
+The project models a Retail Supermarket and focuses on products, suppliers, purchases, stock management, sales billing, customers, employees, and store operations.
 
-### **1. Product & Pricing**
-- category  
-- brand  
-- product  
-- product_tax  
-- price_history  
+The goal of the project was to design and implement a relational database for a Supermarket Management System.  
+Keeping this in mind, the database focuses on:
 
-### **2. Suppliers & Procurement**
-- supplier  
-- supplier_product  
-- purchase_order  
-- purchase_order_item  
-- grn  
-- grn_item  
-- supplier_rating  
-
-### **3. Inventory & Stock**
-- product_batch  
-- stock  
-- stock_ledger  
-- store_transfer  
-- store_transfer_item  
-
-### **4. Store & Employees**
-- store_location  
-- employee  
-- department  
-- role  
-- attendance  
-- employee_shift  
-
-### **5. Sales & Customers**
-- customer  
-- customer_loyalty  
-- sales_invoice  
-- sales_invoice_item  
-- payment_method  
-- payment  
-- coupon  
-- coupon_redemption  
-- return_invoice  
+- Managing products, categories, brands, and pricing  
+- Handling suppliers, purchase orders, and GRN receipts  
+- Tracking batches, inventory stock levels, and store transfers  
+- Capturing customer information and loyalty points  
+- Supporting billing, payments, coupons, and returns  
+- Managing employees, roles, departments, attendance, and shifts  
+- Representing real-world relational dependencies across modules
 
 ---
 
-## Highlights
-- 32 fully connected tables  
-- Batch-level inventory tracking  
-- Complete procurement → stock → sales workflow  
-- Multi-store inventory structure  
-- Customer loyalty and coupon system  
-- Supplier mapping and GRN-based stock updates  
-- Clear foreign key relationships ensuring referential integrity  
-
----
 
 ## Group Details
 **Project:** Retail Supermarket Inventory System  
